@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add PAGE</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h3> Add an Author </h3>
+<form action='/add/author' method='post' id='form1'>
+    Name: <input type='text' name='name'/><br/>
+    Surname: <input type='text' name='surname'/><br/>
+    Email: <input type='email' name='email'/><br/>
+</form>
+
+<button type='submit' form='form1' value='Submit1'>Add author</button>
+
+<h3> Add a Book </h3>
+<form action='/add/book' method='post' id='form2'>
+    Title: <input type='text' name='title'/><br/>
+    Argument: <input type='text' name='argument'/><br/>
+    Author index: <input type='number' name='fk_author'/><br/>
+</form>
+
+<button type='submit' form='form2' value='Submit2'>Add book</button>
+
+</body>
+</html>
